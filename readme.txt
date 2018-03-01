@@ -1,0 +1,1 @@
+直接在该文件夹下开启http服务即可，可以借助nodejs的http-server或live-server，或者把这个文件夹拷贝到wamp的站点根目录下
