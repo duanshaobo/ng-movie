@@ -1,4 +1,4 @@
-Command line instructions
+Command line instructions(gitlab 命令行常用命令介绍)
 
 Git global setup
 git config --global user.name "duan"
