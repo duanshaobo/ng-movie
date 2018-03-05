@@ -1,6 +1,6 @@
 (function(angular){
     //切记将子模块作为依赖注入项目主模块app中
-    var app=angular.module('app',['ngRoute','home','top250','coming_soon','in_theaters','detail','_404','search']);
+    var app=angular.module('app',['ngRoute','home','top250','coming_soon','in_theaters','detail','search']);
     app.controller('indexCtrl',['$scope','$location','$window',function($scope,$location,$window){
         $scope.search=function(event){
 
@@ -42,9 +42,9 @@
             templateUrl:'search/tpl.html',
             controller:'searchCtrl'
         })
-        .otherwise({
-            templateUrl:'_404/tpl.html',
-            controller:'_404Ctrl'
-        });
+        // .otherwise({
+        //     templateUrl:'_404/tpl.html',
+        //     controller:'_404Ctrl'
+        // });
     }]);
 })(angular);
