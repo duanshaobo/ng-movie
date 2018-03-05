@@ -3,7 +3,9 @@
     <ul>
         <li ng-repeat="item in list track by $index">
             <a href="#/detail/{{item.id}}">
-                <img onerror='this.src="assets/img/sc.jpg"' title="{{item.images.large}}" src="{{item.images.large}}">
+                <img onerror='this.src="assets/img/sc.jpg"' 
+                title="{{item.images.large}}" 
+                src="{{item.images.large}}">
             </a>
             <div class="meta">
                 <h4><span>{{item.title}}</span> <em>{{item.rating.average}}分</em></h4>
